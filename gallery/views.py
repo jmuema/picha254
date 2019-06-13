@@ -2,10 +2,10 @@ from django.shortcuts import render
 from .models import Image,Location
 
 # Create your views here.
-# def initial(request):
-#         locations = Location.objects.all()
-#         all_images = Image.objects.all()
-#         return render(request, 'search.html',{"all_images":all_images, "locations": locations})
+def initial(request):
+        locations = Location.objects.all()
+        all_images = Image.objects.all()
+        return render(request, 'search.html',{"all_images":all_images, "locations": locations})
 
 # def search_results(request):
 #         locations = Location.objects.all()
