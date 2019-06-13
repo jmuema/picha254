@@ -42,12 +42,12 @@ class Image(models.Model):
         search_result = cls.objects.filter(image_category__cname__icontains=search_term)
         return search_result
 
-    # @classmethod
-    # def filter_location(cls,location):      #filter images by the location.
-    #     filter_imagelocation = cls.objects.filter(image_location__lname__icontains=location)
-    #     return filter_imagelocation
+    @classmethod
+    def filter_location(cls,location):      #filter images by the location.
+        filter_imagelocation = cls.objects.filter(image_location__lname__icontains=location)
+        return filter_imagelocation
 
-    # @classmethod
-    # def get_image_by_id(cls,input_id):
-    #     retrieved_image = cls.objects.get(id=input_id)
-    #     return retrieved_image
+    @classmethod
+    def get_image_by_id(cls,input_id):
+        retrieved_image = cls.objects.get(id=input_id)
+        return retrieved_image
