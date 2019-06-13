@@ -20,10 +20,10 @@ def search_results(request):
                 message = "You haven't searched for anything"
                 return render(request, 'search.html' , {"message":message}) 
 
-# def specific_location(request, location):
-#         locations = Location.objects.all()
-#         location_results = Image.filter_location(location)
-#         return render(request, 'search.html',{"locations": locations, "all_images":location_results})
+def specific_location(request, location):
+        locations = Location.objects.all()
+        location_results = Image.filter_location(location)
+        return render(request, 'search.html',{"locations": locations, "all_images":location_results})
 
 
                 
