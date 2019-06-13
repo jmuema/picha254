@@ -2,14 +2,14 @@ from django.db import models
 import datetime as dt
 
 
-# class Location(models.Model):
-#     lname = models.CharField(max_length=30)
+class Location(models.Model):
+    lname = models.CharField(max_length=30)
 
-#     def __str__(self):
-#         return self.lname
+    def __str__(self):
+        return self.lname
 
-#     def save_location(self):
-#         self.save()
+    def save_location(self):
+        self.save()
 
 # class Category(models.Model):
 #     cname = models.CharField(max_length=30)
