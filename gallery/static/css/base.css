@@ -67,3 +67,6 @@
   .image img {
     width: 100%;
 }
+body{
+  background: url("../back6.jpg")no-repeat center center;
+}
