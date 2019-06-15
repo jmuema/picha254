@@ -26,7 +26,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECRET_KEY='342s(s(!hsjd998sde8$=o4$3m!(o+kce2^97kp6#ujhi'
 # SECURITY WARNING: don't run with debug turned on in production!
 MODE=config("MODE", default="dev")
-SECRET_KEY = 'muema'
+SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 # development
 if config('MODE')=="dev":
