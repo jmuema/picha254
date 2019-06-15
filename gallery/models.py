@@ -51,3 +51,4 @@ class Image(models.Model):
     def get_image_by_id(cls,input_id):
         retrieved_image = cls.objects.get(id=input_id)
         return retrieved_image
+
