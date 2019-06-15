@@ -1,1 +1,1 @@
-web: gunicorn picha254.wsgi --log-file -
+web: gunicorn picha254.wsgi
